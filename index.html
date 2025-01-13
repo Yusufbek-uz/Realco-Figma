@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="./img/Veranix.png">
+    <link rel="stylesheet" href="./style.css">
+    <title>Realco</title>
+</head>
+<body>
+    <header class="site-header" data-aos="fade-up">
+        <div class="container">
+            <div class="logo">
+                <img src="./img/IMAGE.png" alt="Site Logo">
+            </div>
+            <nav class="navigation">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="active"><i class="fa-solid fa-bars"></i></div>
+        </div>
+    </header>
+    <div id="notification" class="notification hidden">
+        Jonatildi !! <span onclick="closeNotification()">✖</span>
+    </div>
+    <section class="s1 container" data-aos="fade-down">
+        <div class="s1-t">
+            <h1>Find house for your family in minutes.</h1>
+            <p>Aenean sodales mauris quis tellus facilisis, vel mattis magna. Interdum curabitur eget aliquam elit in
+                mauris purus.</p>
+            <div class="s1-search">
+                <i class="fas fa-search"></i><input type="text" placeholder="Pleas writing .." id="inp">
+                <button class="btn" id="clear" onclick="showNotification()">Find property</button>
+                <button onclick="getIPAddress()">Ip-Adres</button>
+            </div>
+        </div>
+        <img src="./img/s1.png" alt="IMG" width="580">
+    </section>
+    <section class="s2 container" data-aos="fade-right">
+        <div class="s2-t">
+            <h2>As seen on the world's best <br> magazines and media</h2>
+        </div>
+        <div class="s2-logo">
+            <img src="./img/logo1.png" alt="Logo" width="120">
+            <img src="./img/logo2.png" alt="Logo" width="120">
+            <img src="./img/logo3.png" alt="Logo" width="120">
+            <img src="./img/logo4.png" alt="Logo" width="120">
+            <img src="./img/logo5.png" alt="Logo" width="120">
+        </div>
+    </section>
+    <section class="s3 container" data-aos="fade-left">
+        <h1>How it works</h1>
+        <p>Nunc laoreet consequat nunc at consequat. Praesent aliquam mi id efficitur pellentesque. <br> Maecenas varius
+            felis felis.</p>
+        <div class="s3-w">
+            <div class="s3-w-c">
+                <img src="./img/s3-w-c-i.png" alt="img">
+                <h3>Find property</h3>
+                <p>Odales mauris quis tellus facilisis, vel mattis magna interdum. Curabitur eget aliquam elit. In
+                    mauris purus, auctor a eleifend non.</p>
+            </div>
+            <div class="s3-w-c">
+                <img src="./img/s3-w-c-i.png" alt="img">
+                <h3>Find property</h3>
+                <p>Odales mauris quis tellus facilisis, vel mattis magna interdum. Curabitur eget aliquam elit. In
+                    mauris purus, auctor a eleifend non.</p>
+            </div>
+            <div class="s3-w-c">
+                <img src="./img/s3-w-c-i.png" alt="img">
+                <h3>Find property</h3>
+                <p>Odales mauris quis tellus facilisis, vel mattis magna interdum. Curabitur eget aliquam elit. In
+                    mauris purus, auctor a eleifend non.</p>
+            </div>
+        </div>
+    </section>
+    <section class="s4 container" data-aos="zoom-in">
+        <div class="s4-1">
+            <div class="s4-1-t">
+                <h2>The best houses for family comfort</h2>
+                <p>Ectus ipsum faucibus justo, et semper quam nisl in nibh. Proin sollicitudin, lorem non posuere
+                    blandit.</p>
+                <div class="contact">
+                    <button>Explore properties</button>
+                    <a href="#">Contact agent --►</a>
+                </div>
+            </div>
+            <div class="s4-1-i"><img src="./img/s4-1.png" alt=""></div>
+        </div>
+        <div class="s4-2">
+            <div class="s4-2-i"><img src="./img/s4-2.png" alt=""></div>
+            <div class="s4-2-t">
+                <h2>The best houses for family comfort</h2>
+                <p>Ectus ipsum faucibus justo, et semper quam nisl in nibh. Proin sollicitudin, lorem non posuere
+                    blandit.</p>
+                <div class="s4-w">
+                    <div class="s3-w-c">
+                        <img src="./img/s3-w-c-i.png" alt="img">
+                        <h3>Less paper work</h3>
+                        <p>Curabitur porta luctus <br> semper donec eget lobortis <br> leo ac finibus nisi.</p>
+                    </div>
+                    <div class="s3-w-c">
+                        <img src="./img/s3-w-c-i.png" alt="img">
+                        <h3>Less paper work</h3>
+                        <p>Curabitur porta luctus <br> semper donec eget lobortis <br> leo ac finibus nisi.</p>
+                    </div>
+                </div>
+                <div class="contact">
+                    <button>Explore properties</button>
+                    <a href="#">Contact agent --►</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="s5 container" data-aos="zoom-in-up">
+        <h1>Houses in your favorite area</h1>
+        <div class="posts">
+            <div class="post">
+                <img src="./img/s5.png" alt="">
+                <h3>Crown house in New York</h3>
+                <p class="price">$ 980,000.00 USD</p>
+                <p><i class="fa-solid fa-map-location-dot"></i>4489 Smity Fielda, New York</p>
+                <div class="s5-p">
+                    <p><i class="fa-solid fa-bath"></i> 2</p>
+                    <p><i class="fa-solid fa-bed"></i> 4</p>
+                    <p><i class="fa-brands fa-square-font-awesome-stroke"></i> 3200 sqft</p>
+                </div>
+            </div>
+            <div class="post">
+                <img src="./img/s5.png" alt="">
+                <h3>Crown house in New York</h3>
+                <p class="price">$ 980,000.00 USD</p>
+                <p><i class="fa-solid fa-map-location-dot"></i>4489 Smity Fielda, New York</p>
+                <div class="s5-p">
+                    <p><i class="fa-solid fa-bath"></i> 2</p>
+                    <p><i class="fa-solid fa-bed"></i> 4</p>
+                    <p><i class="fa-brands fa-square-font-awesome-stroke"></i> 3200 sqft</p>
+                </div>
+            </div>
+            <div class="post">
+                <img src="./img/s5.png" alt="">
+                <h3>Crown house in New York</h3>
+                <p class="price">$ 980,000.00 USD</p>
+                <p><i class="fa-solid fa-map-location-dot"></i>4489 Smity Fielda, New York</p>
+                <div class="s5-p">
+                    <p><i class="fa-solid fa-bath"></i> 2</p>
+                    <p><i class="fa-solid fa-bed"></i> 4</p>
+                    <p><i class="fa-brands fa-square-font-awesome-stroke"></i> 3200 sqft</p>
+                </div>
+            </div>
+            <div class="post">
+                <img src="./img/s5.png" alt="">
+                <h3>Crown house in New York</h3>
+                <p class="price">$ 980,000.00 USD</p>
+                <p><i class="fa-solid fa-map-location-dot"></i>4489 Smity Fielda, New York</p>
+                <div class="s5-p">
+                    <p><i class="fa-solid fa-bath"></i> 2</p>
+                    <p><i class="fa-solid fa-bed"></i> 4</p>
+                    <p><i class="fa-brands fa-square-font-awesome-stroke"></i> 3200 sqft</p>
+                </div>
+            </div>
+            <div class="post">
+                <img src="./img/s5.png" alt="">
+                <h3>Crown house in New York</h3>
+                <p class="price">$ 980,000.00 USD</p>
+                <p><i class="fa-solid fa-map-location-dot"></i>4489 Smity Fielda, New York</p>
+                <div class="s5-p">
+                    <p><i class="fa-solid fa-bath"></i> 2</p>
+                    <p><i class="fa-solid fa-bed"></i> 4</p>
+                    <p><i class="fa-brands fa-square-font-awesome-stroke"></i> 3200 sqft</p>
+                </div>
+            </div>
+            <div class="post">
+                <img src="./img/s5.png" alt="">
+                <h3>Crown house in New York</h3>
+                <p class="price">$ 980,000.00 USD</p>
+                <p><i class="fa-solid fa-map-location-dot"></i>4489 Smity Fielda, New York</p>
+                <div class="s5-p">
+                    <p><i class="fa-solid fa-bath"></i> 2</p>
+                    <p><i class="fa-solid fa-bed"></i> 4</p>
+                    <p><i class="fa-brands fa-square-font-awesome-stroke"></i> 3200 sqft</p>
+                </div>
+            </div>
+        </div>
+        <div class="contact">
+            <button>Explore properties</button>
+            <a href="#">Contact agent --►</a>
+        </div>
+    </section>
+    <section class="s6 container" data-aos="zoom-in-right">
+        <h2>Locations</h2>
+        <p>Nunc mi ante, fringilla eget iaculis et, maximus vel purus integer lacus urna, aliquet non nisl sit amet.</p>
+        <button onclick="getIPAddress()">Ip-Adres</button>
+        <div class="locats">
+            <div class="locat">
+                <h4>New York, NY</h4>
+                <a href="#">View Properties -→</a>
+            </div>
+            <div class="locat">
+                <h4>New York, NY</h4>
+                <a href="#">View Properties -→</a>
+            </div>
+            <div class="locat">
+                <h4>New York, NY</h4>
+                <a href="#">View Properties -→</a>
+            </div>
+            <div class="locat">
+                <h4>New York, NY</h4>
+                <a href="#">View Properties -→</a>
+            </div>
+            <div class="locat">
+                <h4>New York, NY</h4>
+                <a href="#">View Properties -→</a>
+            </div>
+            <div class="locat">
+                <h4>New York, NY</h4>
+                <a href="#">View Properties -→</a>
+            </div>
+        </div>
+        <div class="contact">
+            <button>Explore properties</button>
+            <a href="#">Contact agent --►</a>
+        </div>
+    </section>
+    <section class="s7 container" data-aos="zoom-in-left">
+        <div class="kub">
+            <img src="./img/Frame.png" alt="">
+            <h2>Families are our priority</h2>
+            <p>Curabitur eget aliquam elit. In mauris purus, auctor a eleifend non, placerat vel arcu. In non <br>
+                consectetur lorem. Morbi non varius sapien suscipit mauri.</p>
+            <button class="btn">Get started</button>
+        </div>
+    </section>
+    <section class="s8" data-aos="zoom-out">
+        <div class="container">
+            <h2>What customers say</h2>
+            <p>Faucibus orci luctus et ultrices posuere cubilia curae.</p>
+            <div class="coments">
+                <div class="coment">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>"Aliquam erat volutpat. Nulla pretium nec urna et convallis. Ut varius mi lacus, nec molestie
+                        libero ultricies nec. Aenean lacinia dui elit, ut gravida quam."</h4>
+                    <img src="./img/profil.png" alt="">
+                </div>
+                <div class="coment">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>"Aliquam erat volutpat. Nulla pretium nec urna et convallis. Ut varius mi lacus, nec molestie
+                        libero ultricies nec. Aenean lacinia dui elit, ut gravida quam."</h4>
+                    <img src="./img/profil.png" alt="">
+                </div>
+                <div class="coment">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>"Aliquam erat volutpat. Nulla pretium nec urna et convallis. Ut varius mi lacus, nec molestie
+                        libero ultricies nec. Aenean lacinia dui elit, ut gravida quam."</h4>
+                    <img src="./img/profil.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <img src="./img/IMAGE.png" alt="" height="40">
+            <div class="row">
+                <div><a class="row-f" href="">Pages</a></div><br>
+                <div><a href="#">Home</a></div><br>
+                <div><a href="#">About</a></div><br>
+                <div><a href="#">Blog</a></div><br>
+                <div><a href="#">Agents</a></div><br>
+                <div><a href="#">Contact</a></div><br>
+                <div><a href="#">FAQs</a></div><br>
+                <div><a href="#">Properties</a></div><br>
+            </div>
+            <div class="row">
+                <div><a class="row-f" href="#">CMS Pages</a></div><br>
+                <div><a href="#">Property</a></div><br>
+                <div><a href="#">Property Single</a></div><br>
+                <div><a href="#">Blog Categories</a></div><br>
+                <div><a href="#">Blog Single</a></div><br>
+                <div><a href="#">Agent Single</a></div><br>
+            </div>
+            <div class="row">
+                <div><a class="row-f" href="">Utility Pages</a></div><br>
+                <div><a href="#">Style Guide</a></div><br>
+                <div><a href="#">Changelog</a></div><br>
+                <div><a href="#">Licenses</a></div><br>
+                <div><a href="#">404</a></div><br>
+                <div><a href="#">Password</a></div><br>
+                <div><a href="#">Search</a></div><br>
+            </div>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
